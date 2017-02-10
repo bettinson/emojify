@@ -20,26 +20,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <audio id="buzzer" src="https://cdn.gomix.com/548d4b68-7f2e-4d0b-a1cb-a13acc9ce41b%2FDistorted%20part.m4a" type="audio/m4a"></audio>    
   </head>
   <body>
     <header>
-      <div class="text-center">
+      <div class="text-center" id="title">
         <h1>
           Emojify 😂👌
         </h1>
       </div>
     </header>
     
-    <main>
-      <p class="bold"></p>
-      <p>Type some hood shit...</p>
-      <form>
-        <input type="text" maxlength="100" placeholder="What is up">
-        <button type="submit">Emojify</button>
-      </form>
-    </main>
+    <div class="text-center">
+      <main>
+        <h2>Type some hood shit... Headphones warning, this will be loud.</h2>
+        <form>
+          <textarea class="textarea" type="text" rows="5" cols="50" maxlength="100000" placeholder="you know what to do😂"></textarea>
+          <button type="submit" id="filter" >Emojify</button>
+        </form>
+      </main>
+    </div>
     
-    <div class="output">
+    <div class="text-center">
+      <div class="output">
+      </div>
+
       
     </div>
     <footer>
